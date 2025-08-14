@@ -9,7 +9,6 @@ let users = [
     { id: 2, lastName: 'ordinary', firstName: 'christiana', section: 'Bsit 4a', status: 'a' },
 ];
 
-// Route to update or add user attendance (POST is more appropriate)
 app.post('/users', (req, res) => {
     const { lastName, firstName, section, status } = req.body;
 
@@ -54,3 +53,4 @@ app.listen(PORT, () => {
 });
 
 module.exports = app;
+
