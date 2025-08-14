@@ -39,12 +39,13 @@ app.get('/users', (req, res) => {
     res.status(200).json(users);
 });
 
-app.get('/users', (req, res) => {
+app.get('/', (req, res) => {
     res.send('Send is up and running!');
 });
 
 app.listen(PORT, ()=> {
     console.log('Server is running at http://localhost:${PORT}');
 });
+
 
 module.exports = app;
